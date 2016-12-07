@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 13, 2014 2:49:57 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="domain.StudentDomainModel" table="stu">
+
+		<id name="StudentID" type="uuid-char">
+			<column name="StudentID" length="40" />
+		</id>
+
+		<property name="FirstName" type="string">
+			<column name="FirstName" length="20" not-null="true" />
+		</property>
+		<property name="MiddleName" type="string">
+			<column name="MiddleName" length="20" not-null="true" />
+		</property>
+
+		<property name="LastName" type="string">
+			<column name="LastName" length="20" not-null="true" />
+		</property>
+
+		<property name="DOB" type="date">
+			<column name="DOB" length="7" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>
